@@ -31,7 +31,7 @@ def is_bounded(SIZE_HEIGHT,SIZE_WIDTH,INTERVAL_REAL,INTERVAL_COMPLEX):
             c = complex(INTERVAL_REAL[0]+step_real*x,INTERVAL_COMPLEX[1]-step_complex*y)
 
         if y%(SIZE_HEIGHT/20) == 0:
-            print("progress: "+str(y//SIZE_HEIGHT*100)+"%")
+            print("progress: "+str(int(y/SIZE_HEIGHT*100))+"%")
 
 
 SIZE_HEIGHT = 1000
